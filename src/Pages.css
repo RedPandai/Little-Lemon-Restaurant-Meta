@@ -1,0 +1,108 @@
+.bookingContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+    width:280px;
+    gap:1rem;
+}
+form h2{
+    margin-bottom: 20px;;
+}
+.timeInfo{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+    color:rgb(58, 54, 49);
+    gap:10px;
+}
+form label{
+    align-self: flex-start;
+}
+input, textarea, select{
+    outline:none;
+    color:#1c0b01;
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: #f4f1da;
+}
+textarea{
+    resize: none;
+}
+.optional-container{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+}
+.submitBtn{
+    background-color: rgb(50, 52, 54);
+    color:rgb(238, 243, 230);
+    border-radius:10px;
+    cursor: pointer;
+    border:1px solid #AAA;
+    font-size:1.01rem;
+    margin:10px;
+}
+
+.submitBtn:hover, .submitBtn:focus{
+    background-color: rgb(148, 106, 43);
+    color:rgb(255, 255, 255);
+    box-shadow: 0 0 10px #aaa;
+}
+.submitBtn:disabled{
+    background-color: #aaa;
+    color:rgb(238, 243, 230);
+    box-shadow: 0 0 0 0 #aaa;
+}
+form .optional{
+    font-size:.8rem;
+    color:#484644
+}
+.errorMessages{
+    color:rgb(236, 51, 51);
+    font-size:.9rem;
+}
+
+
+/* BookingConfirmation Page */
+.confirm-container{
+    background-color: rgb(211, 232, 225);
+    height:100svh;
+    color:#3b3632;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.confirm-info{
+    padding:20px;
+    margin:2rem;
+}

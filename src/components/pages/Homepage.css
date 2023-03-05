@@ -1,0 +1,89 @@
+.homepage{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+}
+.banner-img{
+    height:300px;
+    width:80%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-item{
+    opacity: 0;
+    transition-duration:200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    width:100%;
+    align-items: center;
+    cursor: pointer;
+}
+.banner-item.active{
+    opacity:1;
+    transition-duration:1s;
+    transition-delay: 0ms;
+    z-index:1;
+}
+
+
+.rightArrow{
+    position:absolute;
+    top:50%;
+    right:23px;
+    font-size:40px;
+    color:rgb(255, 255, 255);
+    z-index:10;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.leftArrow{
+    position:absolute;
+    top:50%;
+    left:23px;
+    font-size:40px;
+    color:rgb(255, 255, 255);
+    z-index:10;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.rightArrow:hover, .leftArrow:hover{
+    color:rgb(141, 145, 139);
+}
+
+.dots-container{
+    display:flex;
+    justify-content: center;
+}
+.dots{
+    margin: 0 3px;
+    font-size:2rem;
+    cursor: pointer;
+    user-select: none;
+    color:rgb(241, 245, 237);
+}
+.dots.active{
+    color:rgb(165, 175, 162);
+}
+.homepage .openhour{
+    padding:2rem 0;
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    background-color: rgb(242 243 241);
+}
+
